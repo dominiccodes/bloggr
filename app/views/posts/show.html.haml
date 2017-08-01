@@ -2,3 +2,4 @@
 %p= @post.body
 %small= link_to "Back", root_path
 %small= link_to "Edit", edit_post_path(@post)
+%small= link_to "Delete", @post, method: :delete, data: { confirm: "Are you sure?" }
